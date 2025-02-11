@@ -1,6 +1,6 @@
 //newsapi.org api key
-// const ApiKey = process.env.news_org_api_key;
-// const url = "https://newsapi.org/v2/everything?q=";
+const ApiKey = process.env.news_org_api_key;
+const url = "https://newsapi.org/v2/everything?q=";
 
 // const chatgptApikey = process.env.chatgpt_api_key;
 
