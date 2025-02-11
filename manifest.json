@@ -1,0 +1,23 @@
+{
+    "name": "Short News",
+    "version":"1.0.0",
+    "manifest_version": 3,
+    "action":{
+        "default_popup":"extension.html",
+        "default_icon":"assets/news.png"
+    },
+   "host_permissions" : ["https://newsapi.org/*","https://api.openai.com/*","https://api.deepseek.com/*"],
+    "icons":{
+        "128":"assets/news.png"
+    },
+    
+    "commands":{
+        "_execute_action":{
+            "suggested_key":{
+                "default":"Alt+S",
+                "mac":"Alt+S"
+            }
+        }
+    },
+    "permissions":["activeTab"]
+}
