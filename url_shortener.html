@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="url_shortener.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+        <lord-icon src="https://cdn.lordicon.com/ijhuniiu.json" trigger="hover"
+            colors="primary:#16c72e,secondary:#a5e830" style="width:100px;height:100px">
+        </lord-icon>
+
+        <input type="text" id="url" placeholder="Enter Your URL">
+        <div class="buttons">
+            <button class="reload">Refresh</button>
+            <button class="short-btn">Shorten URL</button>
+        </div>
+        <label for="short-url">Shortened URL</label>
+        <textarea id="short-url" rows="3"></textarea>
+
+    </div>
+    <script src="url_shortener.js"></script>
+</body>
+
+</html>
