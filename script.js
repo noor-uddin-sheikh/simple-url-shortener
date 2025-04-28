@@ -5,7 +5,7 @@ const reload = document.querySelector(".reload");
 shortBtn.addEventListener('click', async (e) => {
     e.preventDefault();
     const longUrl = document.getElementById("url").value;
-    const apiUrl = `http://tinyurl.com/api-create.php?url=${encodeURIComponent(longUrl)}`;
+    const apiUrl = `https://tinyurl.com/api-create.php?url=${encodeURIComponent(longUrl)}`;
 
     const shortUrl = document.getElementById("short-url");
 
