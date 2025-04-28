@@ -5,16 +5,19 @@ const reload = document.querySelector(".reload");
 shortBtn.addEventListener('click', async (e) => {
     e.preventDefault();
     const longUrl = document.getElementById("url").value;
-    const apiUrl = `https://tinyurl.com/api-create.php?url=${encodeURIComponent(longUrl)}`;
+    const apiUrl = `https://api.allorigins.win/get?url=${encodeURIComponent('https://tinyurl.com/api-create.php?url=' + longUrl)}`;
+
 
     const shortUrl = document.getElementById("short-url");
 
     try {
         let response = await fetch(apiUrl);
-        let data = await response.text();
+        let data = await response.json();
+        let tinyUrl = data.contents;
         console.log(data);
         if (data) {
-            shortUrl.value = data;
+            shortUrl.value = tinyUrl;
+            // shortUrl.value = data;
         }
         else {
             shortUrl.value = "Error: Invalid link";
